@@ -30,13 +30,17 @@ class Point{
 
             let y =this.y +yDistans;
             if(x>canvas.width -10){
+                x=canvas.width -10;
                 this.xSpeed= -this.xSpeed;
             }else if (x<10) {
+                x=10;
                 this.xSpeed= -this.xSpeed;                
             }
             if(y>canvas.height-10){
+                y=canvas.height-10;
                 this.ySpeed= -this.ySpeed;
             }else if (y<10) {
+                y=10;
                 this.ySpeed= -this.ySpeed;                
             }
 
